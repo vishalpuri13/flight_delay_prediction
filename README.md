@@ -7,7 +7,7 @@ This project aims to explore various supervised machine learning models which ca
 
 #### WORKFLOW:
 
-1. [Exploratory Analysis](#l1) - The whole database was used to do the exploration. SQL queries were made directly through jupyter notebook and pandas and other libraries f python were used to explore the dataset.
+1. [Exploratory Analysis](https://github.com/vishalpuri13/lhb_midterm/blob/main/data_exploration.ipynb) - The whole database was used to do the exploration. SQL queries were made directly through jupyter notebook and pandas and other libraries f python were used to explore the dataset.
 2. [Data Sampling & Wrangling](#l2) - Since the primary dataset was very large, 10% of the dataset was used as a sample and sampling was not random. Data from       January 1-31, 2018 and December 21, 2018 to January 31, 2019 was taken as a sample to do the modeling.
 3. [Feature Engineering & Dimensionality Reduction] (#l3) -  To add strengh to the primary dataset some additional features like averages of delays, payloads, passengers and seats data were added to it. The features were increased from 16 to 24. On the other hand, feautures with low variance and high correlation were removed from the model and the features reduced to 20 again. Principal Component Analysis was also tried to see if conversion to principal components increases the predictability. However, it didn't gave the desired outcome.
 4. [Testing Regression Models](#l4) - Various basic regression models like linear regresssion, ridge regression were used and scored against advanced ensemble models like Random Forest and XG Boost.
